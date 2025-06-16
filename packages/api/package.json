@@ -1,0 +1,29 @@
+{
+  "name": "api",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch --clear-screen=false .",
+    "dev:api": "npm run dev",
+    "dev:no-watch": "tsx .",
+    "build": "tsc",
+    "build:api": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.7.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "mongodb-memory-server": "^9.4.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.4.5"
+  }
+}

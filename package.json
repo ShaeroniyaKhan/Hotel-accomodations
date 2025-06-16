@@ -1,0 +1,26 @@
+{
+  "name": "full-stack-search",
+  "private": true,
+  "version": "1.0.2",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "concurrently npm:start:*",
+    "start:api": "npm run -w api dev",
+    "start:client": "npm run -w client start",
+    "dev": "npm start",
+    "test": "npm run -w client test",
+    "api-no-watch": "npm run -w api dev:no-watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^8.2.2",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^4.1.8"
+  },
+  "dependencies": {
+    "lucide-react": "^0.514.0",
+    "react-icons": "^5.5.0"
+  }
+}
